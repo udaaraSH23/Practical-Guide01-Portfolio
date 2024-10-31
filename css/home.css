@@ -18,8 +18,11 @@
     position: relative;;
 }
 p{
-    margin-top:10px ;
+    margin-top:20px ;
+    line-height: 18px;
+    letter-spacing: 1px;
 }
+
 
 /* Navigation */
 
@@ -43,14 +46,40 @@ li{
     margin: 0 10px;
     display: inline-block;
     padding: 10px;
-    border: 2px solid #ffffff;
+    
 
 }
-a{
-    text-decoration: none;
-    color: #ffffff;
 
+a {  
+  text-decoration: none;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
 
+a:hover{
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .hero-container{
@@ -101,6 +130,7 @@ a{
 }
 
 .skills-bar{
+  margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -232,14 +262,21 @@ a{
 }
 
 .icon-container{
-    background-color: #ffffff;
-    color: #000000;
+    color: #ffffff;
     padding: 20px;
     margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.icon-container a{
+  background-color: #fff;
+  color: #000;
+}
+
+.icon-container a:hover{
+  background-color: #ffffffde;
 }
 .contact-icons{
     width: 50px;
